@@ -10,10 +10,11 @@
     --primary: rgb(0, 0, 0);
     --secondary: #ffffff;
     --alternative: #fbf7f2;
+    --awesome: #fbf7f2;
 }
 /* Navbar & Footer */
 :is(.navbar, footer) {
-    background-color: var(--secondary);
+    background-color: var(--awesome);
 }
 
 /* navbar */
