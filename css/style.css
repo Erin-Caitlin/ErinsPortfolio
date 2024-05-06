@@ -1,0 +1,38 @@
+*,
+::after,    
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(0, 0, 0);
+    --secondary: #ffffff;
+    --alternative: #fbf7f2;
+}
+/* Navbar */
+.navbar {
+    background-color: var(--secondary);
+}
+
+img[alt="logo"] {
+    width: 7rem;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
+    border: var(--alternative);
+}
+
+a {
+    transition: all .6s;
+
+    &:hover {
+        transform: scale(1.2);
+        text-decoration: solid;
+    }
+}
+:is(.nav-link) {
+    color: var(--primary);
+    width: fit-content;
+}
