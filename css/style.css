@@ -9,7 +9,7 @@
 :root {
     --primary: rgb(0, 0, 0);
     --secondary: #ffffff;
-    --alternative: #fbf7f2;
+    --alternative: #ffdecf;
     --awesome: #fbf7f2;
 }
 /* Navbar & Footer */
@@ -37,4 +37,16 @@ a {
 :is(.nav-link) {
     color: var(--primary);
     width: fit-content;
+}
+
+/* Layout */
+:is(body) {
+    display: grid;
+    text-align: center;
+    background-color: var(--alternative);
+}
+
+/* Create rows */
+:is(body) {
+    grid-template-rows: auto minmax(100%, 100dvh) auto;
 }
