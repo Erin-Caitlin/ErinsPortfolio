@@ -11,13 +11,14 @@
     --secondary: #ffffff;
     --alternative: #fbf7f2;
 }
-/* Navbar */
-.navbar {
+/* Navbar & Footer */
+:is(.navbar, footer) {
     background-color: var(--secondary);
 }
 
+/* navbar */
 img[alt="logo"] {
-    width: 7rem;
+    width: 6rem;
     aspect-ratio: 1 / 1;
     object-fit: contain;
     object-position: center;
