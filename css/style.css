@@ -53,32 +53,15 @@ a {
     grid-template-rows: auto minmax(100%, 100dvh) auto;
 }
 
-/* .row-1 {
-    margin: 5rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    padding: 7rem;
-    background-color: var(--secondary);
-
-} */
-
-/* .container {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title {
-    justify-content: center;
-    align-items: center;
-} */
-
 img[alt="profile"] {
     width: 30rem;
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
-    
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.display-1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
