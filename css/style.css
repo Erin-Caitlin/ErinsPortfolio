@@ -129,3 +129,26 @@ img[alt="profile"] {
     border-radius: 2rem;
     padding-block: 5%;
 }
+
+
+
+/* background image */
+#skills {
+    margin-top: 10%;
+    background: gray url(https://erin-caitlin.github.io/all-images/portfolio/skills-background.jpg) no-repeat center 30%;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: soft-light;
+    border-radius: 1rem;
+    
+}
+#skills-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-inline: auto;
+    background-color: rgba(236, 232, 232, 0.407);
+    border-radius: 2rem;
+}
