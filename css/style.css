@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 *,
 ::after,    
 ::before {
@@ -66,6 +67,6 @@ img[alt="profile"] {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
-.display-2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+:is(#heading-erin) {
+    font-family: "Italiana", sans-serif;
 }
