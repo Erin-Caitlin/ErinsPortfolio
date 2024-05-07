@@ -16,11 +16,15 @@
 /* Navbar & Footer */
 :is(.navbar, footer) {
     background-color: var(--awesome);
-    position: sticky;
-    top: 0;
 }
 
 /* navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 img[alt="logo"] {
     width: 6rem;
     aspect-ratio: 1 / 1;
@@ -48,7 +52,7 @@ a {
 
 /* Layout */
 :is(body) {
-    display: grid;
+    /* display: grid; */
     text-align: center;
     background-color: var(--alternative);
 }
@@ -67,6 +71,42 @@ img[alt="profile"] {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
-:is(#heading-erin) {
+:is(#heading-erin, h5) {
     font-family: "Italiana", sans-serif;;
 }
+:is(#sub-heading) {
+    font-style: italic;
+}
+
+/* #about { */
+    /* margin: 0;
+    padding: 0;
+    width: fit-content;
+    display: flex; */
+    /* min-width: 60rem;
+    min-height: 50rem; */
+/* } */
+
+.bg-image {
+    background: gray url(https://erin-caitlin.github.io/all-images/portfolio/about-background.jpg) no-repeat center 30%;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: soft-light;
+}
+.content-wrapper {
+    /* filter: drop-shadow(.1rem .1rem .1rem red); */
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    opacity: .7;
+}
+
+.content-wrapper p {
+    background-color: white;
+    border-radius: 1rem;
+}
+
+/* 
+img[alt="about-background"] */
