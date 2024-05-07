@@ -26,6 +26,7 @@ img[alt="logo"] {
     object-fit: contain;
     object-position: center;
     border: var(--alternative);
+    box-shadow: black 3rem;
 }
 
 a {
@@ -34,6 +35,9 @@ a {
     &:hover {
         transform: scale(1.2);
         text-decoration: solid;
+        color: var(--secondary);
+        background-color: var(--alternative);
+        border-radius: 10%;
     }
 }
 :is(.nav-link) {
@@ -53,6 +57,7 @@ a {
     grid-template-rows: auto minmax(100%, 100dvh) auto;
 }
 
+/* Profile */
 img[alt="profile"] {
     width: 30rem;
     aspect-ratio: 1;
@@ -61,7 +66,6 @@ img[alt="profile"] {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
-
-.display-1 {
+.display-2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
