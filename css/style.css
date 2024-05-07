@@ -68,5 +68,5 @@ img[alt="profile"] {
     border-top-right-radius: 5%;
 }
 :is(#heading-erin) {
-    font-family: "Italiana", sans-serif;
+    font-family: "Italiana", sans-serif;;
 }
