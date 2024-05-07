@@ -48,11 +48,11 @@ a {
 :is(.nav-link) {
     color: var(--primary);
     width: fit-content;
+    font-style: oblique;
 }
 
 /* Layout */
 :is(body) {
-    /* display: grid; */
     text-align: center;
     background-color: var(--alternative);
 }
@@ -71,42 +71,61 @@ img[alt="profile"] {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
 }
-:is(#heading-erin, h5) {
-    font-family: "Italiana", sans-serif;;
+/* All headings */
+:is(#heading-erin, h3, h4) {
+    font-family: "Italiana", sans-serif;
 }
+/* Main title */
+:is(#heading-erin) {
+    filter: drop-shadow(.1rem .1rem .1rem black);
+}
+/* Aspiring Developer */
 :is(#sub-heading) {
     font-style: italic;
 }
 
-/* #about { */
-    /* margin: 0;
-    padding: 0;
-    width: fit-content;
-    display: flex; */
-    /* min-width: 60rem;
-    min-height: 50rem; */
-/* } */
-
+/* background image */
 .bg-image {
     background: gray url(https://erin-caitlin.github.io/all-images/portfolio/about-background.jpg) no-repeat center 30%;
     background-size: cover;
     height: 100vh;
     background-blend-mode: soft-light;
+    
 }
-.content-wrapper {
-    /* filter: drop-shadow(.1rem .1rem .1rem red); */
+    /* about content background */
+#about-content {
     display: flex;
-    flex-flow: column wrap; 
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    opacity: .7;
+    align-content: center;
+    width: 70%;
+    margin-inline: auto;
+    background-color: rgba(236, 232, 232, 0.407);
+    border-radius: 2rem;
+}
+/* About-section */
+#about-heading {
+    margin-bottom: 5%;
+    padding: 3rem;
+}
+/* Above "Resume" */
+#resume {
+    margin-top: 5%;
 }
 
-.content-wrapper p {
-    background-color: white;
-    border-radius: 1rem;
+/* resume content background */
+#resume-content {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   align-items: center;
+   border-radius: 2rem;
 }
 
-/* 
-img[alt="about-background"] */
+/* resume background */
+.bg-white {
+    border-radius: 2rem;
+    padding-block: 5%;
+}
