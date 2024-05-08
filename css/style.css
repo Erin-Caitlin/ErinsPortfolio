@@ -1,178 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 *,
-::after,    
+::after,
 ::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary: rgb(0, 0, 0);
-    --secondary: #ffffff;
-    --alternative: #ffdecf;
-    --awesome: #fbf7f2;
+  --primary: rgb(0, 0, 0);
+  --secondary: #ffffff;
+  --alternative: #ffdecf;
+  --awesome: #fbf7f2;
 }
 /* Navbar & Footer */
 :is(.navbar, footer) {
-    background-color: var(--awesome);
+  background-color: var(--awesome);
 }
 
 /* navbar */
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 img[alt="logo"] {
-    width: 6rem;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    object-position: center;
-    border: var(--alternative);
-    box-shadow: black 3rem;
+  width: 6rem;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
+  border: var(--alternative);
 }
 
 a {
-    transition: all .6s;
+  transition: all 0.6s;
 
-    &:hover {
-        transform: scale(1.2);
-        background-color: var(--alternative);
-        border-radius: 10%;
-    }
+  &:hover {
+    transform: scale(1.2);
+    background-color: var(--alternative);
+    border-radius: 10%;
+  }
 }
 :is(.nav-link) {
-    color: var(--primary);
-    width: fit-content;
-    font-style: oblique;
+  color: var(--primary);
+  width: fit-content;
+  font-style: oblique;
 }
 
 /* Layout */
 :is(body) {
-    text-align: center;
-    background-color: var(--alternative);
+  text-align: center;
+  background-color: var(--alternative);
 }
 
 /* Create rows */
 :is(body) {
-    grid-template-rows: auto minmax(100%, 100dvh) auto;
+  grid-template-rows: auto minmax(100%, 100dvh) auto;
 }
 
 /* Profile */
 img[alt="profile"] {
-    width: 30rem;
-    aspect-ratio: 1;
-    object-fit: cover;
-    object-position: center;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+  width: 30rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  box-shadow: 2rem;
 }
 /* All headings */
 :is(#heading-erin, h3, h4) {
-    font-family: "Italiana", sans-serif;
+  font-family: "Italiana", sans-serif;
 }
 /* Main title */
 :is(#heading-erin) {
-    filter: drop-shadow(.1rem .1rem .1rem black);
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
 }
 /* Aspiring Developer */
 :is(#sub-heading) {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* background image */
 .bg-image {
-    background: gray url(https://erin-caitlin.github.io/all-images/portfolio/about-background.jpg) no-repeat center 30%;
-    background-size: cover;
-    height: 100vh;
-    background-blend-mode: soft-light;
-    border-radius: 1rem;
-    
+  background: gray
+    url(https://erin-caitlin.github.io/all-images/portfolio/about-background.jpg)
+    no-repeat center 30%;
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: soft-light;
+  border-radius: 1rem;
 }
-    /* about content background */
+/* about content background */
 #about-content {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 70%;
-    margin-inline: auto;
-    background-color: rgba(236, 232, 232, 0.407);
-    border-radius: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 70%;
+  margin-inline: auto;
+  background-color: rgba(236, 232, 232, 0.407);
+  border-radius: 2rem;
 }
 /* About-section */
 #about-heading {
-    margin-bottom: 5%;
-    padding: 3rem;
+  margin-bottom: 5%;
+  padding: 3rem;
 }
 /* Above "Resume" */
 #resume {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 /* resume content background */
 #resume-content {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    column-gap: 2rem;
-   align-items: center;
-   border-radius: 2rem;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  align-items: center;
+  border-radius: 2rem;
 }
 /* resume background */
 .bg-white {
-    border-radius: 1rem;
-    padding-block: 5%;
+  border-radius: 1rem;
+  padding-block: 5%;
 }
 /* Resume hover */
 :is(#first, #second, #third, #fourth) {
-    width: 25%;
+  width: 30%;
 
-&:hover {
+  &:hover {
     transform: scale(1.2);
     background-color: var(--alternative);
+  }
 }
+:is(#first) {
+  padding-top: 9.5%;
+  width: 20%;
+}
+:is(#third) {
+  padding-top: 7.5%;
+}
+:is(#fourth) {
+  padding-top: 7.5%;
 }
 
 /* background image */
 #skills {
-    margin-top: 10%;
-    background: gray url(https://erin-caitlin.github.io/all-images/portfolio/skills-background.jpg) no-repeat center 30%;
-    background-size: cover;
-    height: 100vh;
-    background-blend-mode: soft-light;
-    border-radius: 1rem;
-    
+  margin-top: 10%;
+  background: gray
+    url(https://erin-caitlin.github.io/all-images/portfolio/skills-background.jpg)
+    no-repeat center 30%;
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: soft-light;
+  border-radius: 1rem;
 }
 #skills-content {
-    display: flex;
+  /* display: flex;
     flex-flow: column wrap;
+    column-gap: 3rem;
     justify-content: center;
     align-content: center;
     margin-inline: auto;
-    background-color: rgba(236, 232, 232, 0.407);
-    border-radius: 2rem;
-}
-
-:is(#first) {
-    padding-top: 10%;
-    width: 20%;
-}
-:is(#third) {
-    padding-top: 7%;
-}
-:is(#fourth) {
-    padding-top: 7%;
+    background-color: rgba(255, 255, 255, 0.704);
+    border-radius: 2rem; */
 }
 
 /* Testimonials */
 #testimonials-content {
-    display: flex;
-    column-gap: 2rem;
-    border-top-left-radius: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  column-gap: 2rem;
+  border-top-left-radius: 2rem;
 }
 
 /* #right-arrow {
