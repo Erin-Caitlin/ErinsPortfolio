@@ -93,6 +93,11 @@ img[alt="profile"] {
   background-blend-mode: soft-light;
   border-radius: 1rem;
 }
+/* About-section */
+#about-heading {
+    margin-bottom: 5%;
+    padding: 3rem;
+  }
 /* about content background */
 #about-content {
   display: flex;
@@ -105,14 +110,11 @@ img[alt="profile"] {
   background-color: rgba(236, 232, 232, 0.407);
   border-radius: 2rem;
 }
-/* About-section */
-#about-heading {
-  margin-bottom: 5%;
-  padding: 3rem;
-}
+
 /* Above "Resume" */
 #resume {
   margin-top: 5%;
+  padding: 5%;
 }
 /* resume content background */
 #resume-content {
@@ -124,18 +126,20 @@ img[alt="profile"] {
   border-radius: 2rem;
 }
 /* resume background */
-.bg-white {
-  border-radius: 1rem;
-  padding-block: 5%;
-}
+
 /* Resume hover */
 :is(#first, #second, #third, #fourth) {
   width: 30%;
+  border-radius: 1rem;
+  padding-block: 5%;
 
   &:hover {
     transform: scale(1.2);
     background-color: var(--alternative);
   }
+}
+#third p span {
+    font-family:"Italiana", sans-serif;
 }
 :is(#first) {
   padding-top: 9.5%;
@@ -159,15 +163,11 @@ img[alt="profile"] {
   background-blend-mode: soft-light;
   border-radius: 1rem;
 }
-#skills-content {
-  /* display: flex;
-    flex-flow: column wrap;
-    column-gap: 3rem;
-    justify-content: center;
-    align-content: center;
-    margin-inline: auto;
+#column{
+    padding: 1.5rem;
     background-color: rgba(255, 255, 255, 0.704);
-    border-radius: 2rem; */
+    border-radius: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Testimonials */
@@ -183,3 +183,54 @@ img[alt="profile"] {
     justify-content: center;
     align-items: center;
 } */
+
+
+/* Projects */
+
+#projects {
+    margin-top: 10%;
+  background: gray
+    url(https://erin-caitlin.github.io/all-images/portfolio/background.jpg)
+    no-repeat center 30%;
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: soft-light;
+  border-radius: 1rem;
+}
+
+#projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator,
+#keyboard,
+#flip-card,
+#group-project,
+#hulu-website {
+    background-color: rgba(255, 255, 255, 0.704);
+    width: fit-content;
+}
+
+
+/* Calculator */
+ 
+
+  
+/* Keyboard */
+
+.btn {
+  width: 50%;
+  border-radius: 1rem;
+  border-color: var(--alternative);
+  background-color: var(--awesome);
+  vertical-align: top;
+  height: 40%;
+
+    &hover{
+    background-color: var(--alternative);
+}
+  }
