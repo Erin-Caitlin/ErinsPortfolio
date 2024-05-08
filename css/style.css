@@ -77,6 +77,7 @@ img[alt="profile"] {
 /* Main title */
 :is(#heading-erin) {
   filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+  /* text-shadow: 0rem 0.5rem black; */
 }
 /* Aspiring Developer */
 :is(#sub-heading) {
@@ -89,23 +90,23 @@ img[alt="profile"] {
     url(https://erin-caitlin.github.io/all-images/portfolio/about-background.jpg)
     no-repeat center 30%;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
   background-blend-mode: soft-light;
   border-radius: 1rem;
 }
 /* About-section */
 #about-heading {
-    margin-bottom: 5%;
-    padding: 3rem;
+    margin-bottom: 1rem;
+    /* padding: 3rem; */
   }
 /* about content background */
 #about-content {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   align-content: center;
-  width: 70%;
+  width: fit-content;
   margin-inline: auto;
   background-color: rgba(236, 232, 232, 0.407);
   border-radius: 2rem;
@@ -125,17 +126,13 @@ img[alt="profile"] {
   align-items: center;
   border-radius: 2rem;
 }
-/* resume background */
-
 /* Resume hover */
 :is(#first, #second, #third, #fourth) {
-  width: 30%;
   border-radius: 1rem;
   padding-block: 5%;
 
   &:hover {
     transform: scale(1.2);
-    background-color: var(--alternative);
   }
 }
 #third p span {
@@ -152,6 +149,8 @@ img[alt="profile"] {
   padding-top: 7.5%;
 }
 
+
+/* Skills */
 /* background image */
 #skills {
   margin-top: 10%;
@@ -159,10 +158,11 @@ img[alt="profile"] {
     url(https://erin-caitlin.github.io/all-images/portfolio/skills-background.jpg)
     no-repeat center 30%;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
   background-blend-mode: soft-light;
   border-radius: 1rem;
 }
+/* skills content background */
 #column{
     padding: 1.5rem;
     background-color: rgba(255, 255, 255, 0.704);
@@ -178,7 +178,18 @@ img[alt="profile"] {
   column-gap: 2rem;
   border-top-left-radius: 2rem;
 }
+img[alt="profile1"] {
+    width:50%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
+    border: var(--alternative);
+  }
 
+:is(#test1, #test2, #test3, #test4, #test5) {
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
 /* #right-arrow {
     justify-content: center;
     align-items: center;
@@ -186,7 +197,6 @@ img[alt="profile"] {
 
 
 /* Projects */
-
 #projects {
     margin-top: 10%;
   background: gray
@@ -200,6 +210,7 @@ img[alt="profile"] {
 
 #projects-content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     column-gap: 2rem;
     justify-content: center;
@@ -209,21 +220,17 @@ img[alt="profile"] {
 #calculator,
 #keyboard,
 #flip-card,
-#group-project,
-#hulu-website {
+#project{
     background-color: rgba(255, 255, 255, 0.704);
     width: fit-content;
+    object-fit: contain;
 }
-
-
 /* Calculator */
- 
-
   
 /* Keyboard */
 
 .btn {
-  width: 50%;
+  width: fit-content;
   border-radius: 1rem;
   border-color: var(--alternative);
   background-color: var(--awesome);
@@ -233,4 +240,8 @@ img[alt="profile"] {
     &hover{
     background-color: var(--alternative);
 }
-  }
+}
+
+:is(#calculator, #keyboard, #flip-card, #project) {
+    border-radius: 1rem;
+}
