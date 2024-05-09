@@ -57,16 +57,13 @@ a {
 :is(body) {
   grid-template-rows: auto minmax(100%, 100dvh) auto;
 }
-
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: fit-content;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--alternative);
-}
-
-
+} */
 
 /* Profile */
 img[alt="profile"] {
@@ -105,14 +102,13 @@ img[alt="profile"] {
 /* About-section */
 #about-heading {
     /* margin-bottom: 5%; */
-    padding: 3rem;
+    padding: 2rem;
   }
 /* about content background */
 #about-content {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  /* align-items: center; */
   align-content: center;
   width: fit-content;
   margin-inline: auto;
@@ -165,7 +161,6 @@ img[alt="profile"] {
     url(https://erin-caitlin.github.io/all-images/portfolio/skills-background.jpg)
     no-repeat center 30%;
   background-size: cover;
-  /* height: 100vh; */
   background-blend-mode: soft-light;
   border-radius: 1rem;
 }
@@ -178,25 +173,36 @@ img[alt="profile"] {
 }
 
 /* Testimonials */
+#testimonials-heading {
+  margin-top: 2.5rem;
+  padding: 5%;
+}
 #testimonials-content {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  display: flex;
-  column-gap: 2rem;
-  border-top-left-radius: 2rem;
-}
-img[alt="profile1"] {
-    padding: 0;
-  }
+    width: 2rem;
+    margin: 0 auto;
 
-:is(#test1, #test2, #test3, #test4, #test5) {
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: row;
 }
-/* #right-arrow {
-    justify-content: center;
-    align-items: center;
-} */
+.card1,
+.card2,
+.card3,
+.card4 {
+    margin: 0 2rem 3rem;
+    box-shadow: 0 0.5rem 1rem brown;
+    background: var(--awesome);
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    flex-basis: 3rem;
+}
+
+img[alt="profile1"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  object-fit: contain;
+}
 
 /* Projects */
 #projects {
@@ -226,8 +232,7 @@ img[alt="profile1"] {
     width: fit-content;
     object-fit: contain;
 }
-/* Calculator */
-/* Keyboard */
+
 .btn {
   width: fit-content;
   border-radius: 1rem;
@@ -251,29 +256,33 @@ img[alt="profile1"] {
   flex-direction: column;
   width: 30%;
   text-decoration: none;
+  gap: 3rem;
 }
-
 #info {
-  
   border-radius: 1rem;
   border-color: var(--alternative);
 }
-
 img[alt="reach-me-profile"] {
+  align-items: right;
   width: 30%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
-  border: var(--alternative);
-}
-
-#content-details {
-  align-items: right;
 }
 
 #reach-me-content {
-  margin: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  margin-top: 2rem;
   background: linear-gradient(-50deg, var(--alternative), var(--secondary));
   width: fit-content;
 }
+#info {
+  margin: 2rem;
+}
 
+.contact {
+  text-align: center;
+  margin-top: 10%;
+}
