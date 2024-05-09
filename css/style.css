@@ -89,13 +89,13 @@ img[alt="profile"] {
     url(https://erin-caitlin.github.io/all-images/portfolio/about-background.jpg)
     no-repeat center 30%;
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
   background-blend-mode: soft-light;
   border-radius: 1rem;
 }
 /* About-section */
 #about-heading {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     padding: 3rem;
   }
 /* about content background */
@@ -105,7 +105,7 @@ img[alt="profile"] {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 70%;
+  width: fit-content;
   margin-inline: auto;
   background-color: rgba(236, 232, 232, 0.407);
   border-radius: 2rem;
