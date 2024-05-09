@@ -96,8 +96,8 @@ img[alt="profile"] {
 }
 /* About-section */
 #about-heading {
-    margin-bottom: 1rem;
-    /* padding: 3rem; */
+    /* margin-bottom: 5%; */
+    padding: 3rem;
   }
 /* about content background */
 #about-content {
