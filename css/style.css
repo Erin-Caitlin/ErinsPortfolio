@@ -25,6 +25,7 @@
   z-index: 10;
 }
 
+
 img[alt="logo"] {
   width: 6rem;
   aspect-ratio: 1 / 1;
@@ -51,19 +52,16 @@ a {
 :is(body) {
   text-align: center;
   background-color: var(--alternative);
+  display: grid;
 }
 
 /* Create rows */
 :is(body) {
-  grid-template-rows: auto minmax(100%, 100dvh) auto;
+  grid-template-rows: auto minmax(1fr, 100dvh) auto;
 }
-/* ::-webkit-scrollbar {
-  width: fit-content;
+::-webkit-scrollbar {
+  display: none;
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--alternative);
-} */
 
 /* Profile */
 img[alt="profile"] {
@@ -82,7 +80,6 @@ img[alt="profile"] {
 /* Main title */
 :is(#heading-erin) {
   filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
-  /* text-shadow: 0rem 0.5rem black; */
 }
 /* Aspiring Developer */
 :is(#sub-heading) {
@@ -91,7 +88,7 @@ img[alt="profile"] {
 
 /* background image */
 .bg-image {
-  background: gray
+  background: rgb(177, 148, 148)
     url(https://erin-caitlin.github.io/all-images/portfolio/about-background.jpg)
     no-repeat center 30%;
   background-size: cover;
@@ -131,27 +128,24 @@ img[alt="profile"] {
   border-radius: 2rem;
 }
 /* Resume hover */
+
 :is(#first, #second, #third, #fourth) {
-  border-radius: 1rem;
-  padding-block: 5%;
+  border-radius: 2rem;
+  
 
   &:hover {
     transform: scale(1.2);
   }
 }
+img[alt="profile2"] {
+  width: 50%;
+  object-fit: contain;
+  margin-left: 25%;
+}
 #third p span {
     font-family:"Italiana", sans-serif;
 }
-:is(#first) {
-  padding-top: 9.5%;
-  width: 20%;
-}
-:is(#third) {
-  padding-top: 7.5%;
-}
-:is(#fourth) {
-  padding-top: 7.5%;
-}
+
 
 /* Skills */
 /* background image */
@@ -172,6 +166,7 @@ img[alt="profile"] {
     font-size: 1.5rem;
 }
 
+
 /* Testimonials */
 #testimonials-heading {
   margin-top: 2.5rem;
@@ -187,7 +182,8 @@ img[alt="profile"] {
 .card1,
 .card2,
 .card3,
-.card4 {
+.card4,
+.card5 {
     margin: 0 2rem 3rem;
     box-shadow: 0 0.5rem 1rem brown;
     background: var(--awesome);
@@ -197,21 +193,21 @@ img[alt="profile"] {
 }
 
 img[alt="profile1"] {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 20%;
   object-fit: contain;
+  margin-left: 40%;
 }
-
+:is(.carousel-control-next,
+.carousel-control-prev) {
+  filter: invert(100%);
+}
 /* Projects */
 #projects {
     margin-top: 10%;
-  background: gray
+  background: rgb(177, 148, 148)
     url(https://erin-caitlin.github.io/all-images/portfolio/background.jpg)
     no-repeat center 30%;
   background-size: cover;
-  height: 100vh;
   background-blend-mode: soft-light;
   border-radius: 1rem;
 }
@@ -224,6 +220,19 @@ img[alt="profile1"] {
     justify-content: center;
     align-items: center;
 }
+
+img[alt="keyboard"] {
+  width: 20rem;
+  height: 10rem;
+  margin-left: 20rem;
+
+}
+:is(#keyboard) {
+  padding: 10%;
+  margin-left: 3% ;
+  column-gap: 3rem;
+}
+
 #calculator,
 #keyboard,
 #flip-card,
@@ -231,6 +240,11 @@ img[alt="profile1"] {
     background-color: rgba(255, 255, 255, 0.704);
     width: fit-content;
     object-fit: contain;
+}
+#github,
+#vercel {
+  text-decoration: none;
+  font-style: var(--primary);
 }
 
 .btn {
@@ -285,4 +299,13 @@ img[alt="reach-me-profile"] {
 .contact {
   text-align: center;
   margin-top: 10%;
+}
+
+.carousel-fade {
+  justify-content: center;
+  align-items: center;
+}
+
+:is(.carousel .slide) {
+    height: 70%;
 }

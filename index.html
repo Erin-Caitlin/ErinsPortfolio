@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" class="css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Erin's Portfolio</title>
   </head>
 
@@ -25,6 +26,9 @@
         <a class="navbar-brand" href="#">
           <img class="img-thumbnail" src="https://erin-caitlin.github.io/all-images/portfolio/main-logo.png" alt="logo" loading="lazy"/>
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03Content" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -56,7 +60,7 @@
     <main class="container-fluid">
       <section class="container" id="home">
         <div class="row flex-column flex-md-row justify-content-center align-items-center vh-100">
-          <div class="col">
+          <div class="col" data-aos="zoom-in-down">
             <img
               class="img-fluid" src="https://erin-caitlin.github.io/all-images/portfolio/main-profile.jpg" alt="profile" loading="lazy">
           </div>
@@ -86,26 +90,37 @@
 
       <section class="container" id="resume">
         <h3 class="display-3">Resume</h3>
+
         <div class="row" id="resume-content">
-            <div class="col bg-white" id="first">
-              <h4>Education Details</h4>
-              <p class="lead">Matriculated from Mondale High School in 2022</p>
-            </div>
-            <div class="col bg-white" id="second">
-              <h4>Photography Course</h4>
-              <p class="lead">Certificate received for completing a 3-day photography course through RAD</p>
-            </div>
-            <div class="col bg-white" id="third">
-              <h4>Work Experience</h4>
-              <p class="lead"><span>Sigma Connected:</span>
-                March 2023 - April 2024 <span>Position:</span> Customer Advisor</p>
-            </div>
-            <div class="col bg-white" id="fourth">
-              <h4>Life Choices Academy</h4>
-              <p class="lead">Student at Life Choices Academy: 02 April 2024 - Present</p>
-            </div>
+          <div class="col" id="first" data-aos="flip-left">
+            <div class="card">
+          <h4>Education Details</h4>
+          <img src="https://erin-caitlin.github.io/all-images/portfolio/mondalehs.Array" class="img-thumbnail" alt="profile2" loading="lazy">
+          <p class="lead">Matriculated from Mondale High School in 2022</p>
         </div>
-        
+        </div>
+          <div class="col" id="second" data-aos="flip-left">
+            <div class="card">
+              <h4>Photography Course</h4>
+              <img src="https://erin-caitlin.github.io/all-images/portfolio/RAD.webp" class="img-thumbnail" alt="profile2" loading="lazy">
+              <p class="lead">Certificate received for completing a 3-day photography course through RAD (Rise Above Development).</p>
+            </div>
+            </div>
+          <div class="col" id="third" data-aos="flip-left">
+            <div class="card">
+          <h4>Work Experience</h4>
+          <img src="https://erin-caitlin.github.io/all-images/portfolio/sigma-connected.webp" class="img-thumbnail" alt="profile2" loading="lazy">
+          <p class="lead"><span>Sigma Connected:</span>
+            March 2023 - April 2024 <span>Position:</span> Customer Advisor</p>
+        </div>
+        </div>
+          <div class="col" id="fourth" data-aos="flip-left">
+            <div class="card">
+          <h4>Life Choices Academy</h4>
+          <img src="https://erin-caitlin.github.io/all-images/portfolio/LCA.png" class="img-thumbnail" alt="profile2" loading="lazy">
+          <p class="lead">Student at Life Choices Academy: 02 April 2024 - Present</p>
+        </div>
+        </div>
       </section>
 
       <section class="container" id="skills">
@@ -125,128 +140,148 @@
 
       <section class="container" id="testimonials">
           <h3 class="display-3" id="testimonials-heading">Testimonials</h3>
-          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-          <div class="col card1">
-          <div class="card">
-            <h5>Prophet Lizelle Adonis</h5>
-            <p class="lead">Senior Pastor</p>
-            <img src="https://erin-caitlin.github.io/all-images/portfolio/Prophet Lizelle.jpg" class="img-thumbnail" alt="profile1" loading="lazy">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="col card1">
+                <div class="card">
+                  <h5>Prophet Lizelle Adonis</h5>
+                  <p class="lead">Senior Pastor</p>
+                  <img src="https://erin-caitlin.github.io/all-images/portfolio/Prophet Lizelle.jpg" class="img-thumbnail" alt="profile1" loading="lazy">
+                  </div>
+                  <p class="lead">
+                    l, the undersigned Senior Pastor, would like to recommend Erin Caitlin Williams, who has been a member of the above mentioned church (Deep River Revival Worship Center). She has been fellow-shipping at our place of worship for the last 15 years alongside her family and has shown herself to be devoted in attendance and submission. She has been actively involved in Youth Ministry, Arts & Culture department(Dancing) as well as our School of Esther (Training school for young girls). Her interests varies from learning new skills & teachings, attending church services as well as a love for meeting new people. Dedication & commitment is her life motto, therefore I would recommend her for any task given as it will be accomplished as expected.</p>
+                </div>      
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <div class="col card1">
+                <div class="card">
+                  <h5>Melanie Ederoos</h5>
+                  <p class="lead">Friend</p>
+                  <img src="https://erin-caitlin.github.io/all-images/portfolio/Melanie Ederoos.jpg" class="img-thumbnail" alt="profile1" loading="lazy">
+                  </div>
+                  <p class="lead">In a world plagued by the influence of social media. It is quite rare that we are able to encounter something or rather someone who is true in their very nature and who under no circumstances conforms to the ways of the world. This description is exactly who Erin Williams is. A young lady who in all excellency, remains true to her very nature, remaining firm in her beliefs and values. Who does not compromise with truth, and living her life in love and compassion. Erin's greatest attribute is her ability to connect with others, creating a safe space for others to be themselves, yet not compromising on who she is. Erin is filled with wisdom, humility and a consistent drive to excel in all that she does. Her attributes have been portrayed in every area in her life. Allowing her to achieve great accomplishments. Erin is an inspiration to those around her, amongst her own peers and even those who distantly admires her. She is able to achieve anything she sets her mind to, as she exhibits true resilience. Erin is more than capable of achieving greatness and being a success in multiple facets. I have no doubt whatsoever that she will be prosperous in her endeavours, impacting lives as she tarrys along</p>
+                  <p class="lead">With Love,
+                  Melanie Ederoos</p>
+                </div>      
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <div class="col card3">
+                  <div class="card">
+                    <h5>Nosipho Precious Femela</h5>
+                    <p class="lead">Team Manager</p>
+                    <img src="https://erin-caitlin.github.io/all-images/portfolio/Nosipho Precious.jpg" class="img-thumbnail" alt="profile1" loading="lazy">
+                    </div>
+            <p class="lead">To whom it may concern,</p>
+            <p class="lead">I confirm that Erin Williams was employed by Sigma Connected, from 23 March 2023 to
+              1 April 2024.</p>
+            <p class="lead">She had held the following position: Customer Advisor. In her most recent position, she
+              had responsibility for contacting our client’s customers for debt collection, debt
+              recovery, she provided customer service, handled customer complaints, dealt with
+              billing and metering queries. She was a multi functional customer service advisor.</p>
+              <p class="lead">Erin brought forward good qualities on providing customer services and utilising CRM systems. She
+                showed good judgement and acted like a mature member of the team.
+                Her unconventional way of thinking helped the company to solve practical issues in the
+                most efficient ways.</p>  
+                <p class="lead">I would highly recommend Erin as I consider her a model member of the team who
+                provided consistency and delivered all expectations.</p>
+               
+                <p class="lead">Yours faithfully, Nosipho Precious Femela</p>
+               
+                <p class="lead">Team Manager</p>
+              </div>
             </div>
-            <p class="lead">
-              l, the undersigned Senior Pastor, would like to recommend Erin Caitlin Williams, who has been a member of the above mentioned church (Deep River Revival Worship Center). She has been fellow-shipping at our place of worship for the last 15 years alongside her family and has shown herself to be devoted in attendance and submission. She has been actively involved in Youth Ministry, Arts & Culture department(Dancing) as well as our School of Esther (Training school for young girls). Her interests varies from learning new skills & teachings, attending church services as well as a love for meeting new people. Dedication & commitment is her life motto, therefore I would recommend her for any task given as it will be accomplished as expected.</p>
-          </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col card2">
-          <div class="card">
-            <h5>Melanie Ederoos</h5>
-            <p class="lead">Friend</p>
-            <img src="https://erin-caitlin.github.io/all-images/portfolio/Melanie Ederoos.jpg" class="img-thumbnail" alt="profile1" loading="lazy">
-            </div>
-            <p class="lead">In a world plagued by the influence of social media. It is quite rare that we are able to encounter something or rather someone who is true in their very nature and who under no circumstances conforms to the ways of the world. This description is exactly who Erin Williams is. A young lady who in all excellency, remains true to her very nature, remaining firm in her beliefs and values. Who does not compromise with truth, and living her life in love and compassion. Erin's greatest attribute is her ability to connect with others, creating a safe space for others to be themselves, yet not compromising on who she is. Erin is filled with wisdom, humility and a consistent drive to excel in all that she does. Her attributes have been portrayed in every area in her life. Allowing her to achieve great accomplishments. Erin is an inspiration to those around her, amongst her own peers and even those who distantly admires her. She is able to achieve anything she sets her mind to, as she exhibits true resilience. Erin is more than capable of achieving greatness and being a success in multiple facets. I have no doubt whatsoever that she will be prosperous in her endeavors, impacting lives as she tarrys along</p>
-            <p class="lead">With Love,
-            Melanie Ederoos</p>
-          </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col card3">
-          <div class="card">
-            <h5>Zaynurah Jacobs</h5>
-            <p class="lead">Team Manager</p>
-            <img src="https://erin-caitlin.github.io/all-images/portfolio/profile-image.png" class="img-thumbnail" alt="profile1" loading="lazy">
-          </div>
-            <p class="lead">Erin Williams reported to me for just over 6 months and I can consider her as a strong and trustworthy individual.She is hard-working and takes feedback exceptionally well. She always strives to do better and be consistent in her performance in every metric set out by the business despite its challenging nature.</p>
-              
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="col card3">
+                <div class="card">
+                  <h5>Zaynurah Jacobs</h5>
+                  <p class="lead">Team Manager</p>
+                  <img src="https://erin-caitlin.github.io/all-images/portfolio/profile-image.png" class="img-thumbnail" alt="profile1" loading="lazy">
+                </div>
+                <p class="lead">Erin Williams reported to me for just over 6 months and I can consider her as a strong and trustworthy individual.She is hard-working and takes feedback exceptionally well. She always strives to do better and be consistent in her performance in every metric set out by the business despite its challenging nature.</p>
+             
               <p class="lead">Erin’s Attitude towards her work and colleagues is admirable and I can indeed confirm her ability to make a positive difference within the work place, church and family.Erin has exceptional attendance and a true team player. It was an honour to have worked with her and as her manager it was an absolute pleasure having her in our team. </p>
-              
-              <p class="lead">Zaynurah Jacobs Team manager</p> 
+             
+              <p class="lead">Zaynurah Jacobs Team manager</p>
               <p class="lead">076 554 6369 </p>
-          </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="col card4">
-          <div class="card">
-            <h5>Pastor Nicole Davids</h5>
-            <p class="lead">Youth Pastor</p>
-            <img src="https://erin-caitlin.github.io/all-images/portfolio/Pastor Nicole.jpg" class="img-thumbnail" alt="profile1" loading="lazy">
-          </div>
-            <p class="lead">Erin Williams has been a longstanding member of the Deep River Revival Worship Center.
-              As her pastor, I have seen many examples of her tenacity and leadership capabilities. She has proven
-              herself to be a diligent, purpose driven person of high values and etiquette. While she may have had
-              challenges as any young person does, she did not let this deter her from focusing on her goals and
-              pursuing them with tenacious drive.</p>
-              <p class="lead">Erin has shown moral character and sound principles when making life decisions, as guided by
-              Her Parents and spiritual leadership.</p> 
-              
-              <p class="lead">She is a committed team player and has shown herself capable of receiving and acting on instructions
-              without protest or delay. I eagerly recommend her for any position she may apply and know she will act
-              with the best interest of the organization at heart, by adding value to the team she is working with.
-              Please feel free to contact me if you require any further information about this character and
-              person.</p>
-            <p class="lead">Pastor Nicole Davids</p>
-            </div>  
-          </div>
-          </div>
-        </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="col card4">
+                <div class="card">
+                  <h5>Pastor Nicole Davids</h5>
+                  <p class="lead">Youth Pastor</p>
+                  <img src="https://erin-caitlin.github.io/all-images/portfolio/Pastor Nicole.jpg" class="img-thumbnail" alt="profile1" loading="lazy">
+                </div>      
+                <p class="lead">Erin Williams has been a longstanding member of the Deep River Revival Worship Center.
+                  As her pastor, I have seen many examples of her tenacity and leadership capabilities. She has proven
+                  herself to be a diligent, purpose driven person of high values and etiquette. While she may have had
+                  challenges as any young person does, she did not let this deter her from focusing on her goals and
+                  pursuing them with tenacious drive.</p>
+                  <p class="lead">Erin has shown moral character and sound principles when making life decisions, as guided by
+                  Her Parents and spiritual leadership.</p>
+                 
+                  <p class="lead">She is a committed team player and has shown herself capable of receiving and acting on instructions
+                  without protest or delay. I eagerly recommend her for any position she may apply and know she will act
+                  with the best interest of the organization at heart, by adding value to the team she is working with.
+                  Please feel free to contact me if you require any further information about this character and
+                  person.</p>
+                <p class="lead">Pastor Nicole Davids</p>
+                </div>
+            </div>
+            <div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        </div>
-      </div>
       </section>
 
       <section class="container" id="projects">
         <h3 class="display-3">Projects</h3>
         <div class="row" id="projects-content">
+              
+          <section class="container" id="projects">
+            <h3 class="display-3" id="about-heading">Projects</h3>
+    
+            <div class="row justify-content-evenly" id="projects-content">
+              <div class="content-wrapper">
+                <div><h4 class="header-text">Keyboard</h4>
+                  <button type="button" class="btn" id="github">
+                    <a class="m-auto" href="https://github.com/Erin-Caitlin/Keyboard.git" target="_blank">Github</button></a>
+                    <button type="button" class="btn" id="vercel">
+                      <a href="https://keyboard-psi-three.vercel.app/">Vercel</button></a>
+                </div>
 
-          <div class="col" id="calculator">
-            <h4>Calculator</h4>
-            <img class="img-thumbnail" src="https://erin-caitlin.github.io/all-images/portfolio/Calculator.png" alt="calculator" loading="lazy">
-            <button type="button" class="btn" id="github">
-              <a class="m-auto" href="https://github.com/Erin-Caitlin/Calculator.git">Github</button></a>
-            <button type="button" class="btn" id="vercel"><a href="https://calculator-main-five.vercel.app/">Vercel</button></a>
-          </div>
-          <div class="col" id="keyboard">
-            <h4>Keyboard</h4>
-            <img class="img-thumbnail" src="https://erin-caitlin.github.io/all-images/portfolio/Keyboard.png" alt="keyboard" loading="lazy">
-            <button type="button" class="btn" id="github"><a href="https://github.com/Erin-Caitlin/Keyboard.git">Github</button></a>
-            <button type="button" class="btn" id="vercel"><a href="https://keyboard-psi-three.vercel.app/">Vercel</button></a>
-          </div>
-          <div class="col" id="flip-card">
-            <h4>Flip Card</h4>
-            <img src="" alt="" loading="lazy">
-            <button type="button" class="btn" id="github">Github</button>
-            <button type="button" class="btn" id="vercel">Vercel</button>
-          </div>
-          <div class="col" id="project">
-            <h4>Project</h4>
-            <img src="" alt="" loading="lazy">
-            <button type="button" class="btn" id="github">Github</button>
-            <button  type="button" class="btn" id="vercel">Vercel</button>
-          </div>
-          <div class="col" id="project">
-            <h4>Project</h4>
-            <img src="" alt="" loading="lazy">
-            <button type="button" class="btn" id="github">Github</button>
-            <button type="button" class="btn" id="vercel">Vercel</button>
-          </div>
+                <div><h4 class="header-text">Flip Card</h4>
+                  <button type="button" class="btn" id="github"><div class="col" id="calculator">
+                    <a class="m-auto" href="https://github.com/Erin-Caitlin/Calculator.git">Github</button></a>
+                    <button type="button" class="btn" id="vercel"><a href="https://calculator-main-five.vercel.app/">Vercel</button></a>
+                </div>
+
+                <div><p class="lead" id="column"><h4 class="header-text">Flex box</h4>
+                  <button type="button" class="btn" id="github"><div class="col" id="flex-box">
+                  <a class="m-auto" href="https://github.com/Erin-Caitlin/Flexbox.git">Github</button></a>
+                  <button type="button" class="btn" id="vercel"><a href="https://flexbox-five-kappa.vercel.app/">Vercel</button></a></p></div>
+
+                <div><h4 class="header-text">Month Calender</h4>
+                  <button type="button" class="btn" id="github"><div class="col" id="flex-box">
+                  <a class="m-auto" href="https://github.com/Erin-Caitlin/Calendar.git">Github</button></a>
+                  <button type="button" class="btn" id="vercel"><a href="">Vercel</button></a></div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
       
       <section class="container" id="reach-me">
         <h3 class="display-3">Reach Me</h3>
-        <div class="col flex-column" id="reach-me-content">
+        <div class="row" id="reach-me-content">
           <div class="col" id="form">
           <form action="https://formspree.io/f/xgegqenp" method="POST">
             <h4 class="contact">Message me!</h4>
@@ -264,13 +299,14 @@
             </label>
             
             <button type="submit" class="btn">Send</button>
+            <button type="clear" class="btn">Clear</button>
           </form>
-        </div class="col" id="content-details">
-        <div class="col">
-          <img class="img-thumbnail" src="https://erin-caitlin.github.io/all-images/portfolio/reach-me-profile.jpg" alt="reach-me-profile" loading="lazy"/></div>
-          <div class=""><i class="bi bi-telephone"><p class="lead">066 267 3498</p></i></div>
+        </div class="col" id="content-details" data-aos="fade-left">
+          <div class="">
+          <div class="d-flex"><i class="bi bi-telephone"><p class="lead">066 267 3498</p></i></div>
           <div class=""><i class="bi bi-envelope"><p class="lead">erinwilliamscat@gmail.com</p></i></div>
           <div class=""><i class="bi bi-geo-alt"><p class="lead">Mitchells Plain, Cape Town</p></i></div>
+          </div>
         </div>
       </section>
     </main>
@@ -281,6 +317,9 @@
         <span>&copy; 2024</span>
       </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
